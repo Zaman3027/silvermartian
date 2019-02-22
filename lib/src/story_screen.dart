@@ -40,13 +40,23 @@ class StoryScreen extends StatelessWidget {
         title: Text("Silver Martian"),
       ),
       body: Container(
+        color: Colors.black87,
         child: Column(
           children: <Widget>[
             Image.asset(assetImagePath),
-            Text(
-              storyText,
-              style: TextStyle(fontSize: 16),
-            ),
+            Container(
+              padding: EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                border: Border.all(width: 2,color: Colors.yellowAccent)
+              ),
+              margin: EdgeInsets.all(8),
+              child: Text(
+                storyText,
+                style: TextStyle(fontSize: 16,color: Colors.white,letterSpacing: 2,fontWeight: FontWeight.bold),
+                
+              ),
+            )
+            ,
             Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

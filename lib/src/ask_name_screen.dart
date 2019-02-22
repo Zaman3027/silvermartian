@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './story_screen.dart';
+import './storyRouteGenerator.dart';
 
 class AskNameScreen extends StatefulWidget {
 
@@ -18,7 +19,7 @@ class AskNameScreenState extends State<AskNameScreen> {
   }
 
   @override
-  void dispode(){
+  void dispose(){
     super.dispose();
     _editingController.dispose();
   }
@@ -47,7 +48,7 @@ class AskNameScreenState extends State<AskNameScreen> {
             RaisedButton(
               onPressed: (){
                 print(_editingController.text);
-                Navigator.push(context,storyScreenRoute() ); 
+                Navigator.push(context, getRouteByStoryStage(StoryStage.page0, _editingController.text)); 
               },
                             child: Text("START YOUR ADVENTURE"),
                           )
