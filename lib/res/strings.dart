@@ -15,7 +15,7 @@ String page3 = "Your EVA suit is equipped with a headlamp, which you use to navi
 String page3_choice1 ="Refill at ship and explore the rover";
 String page3_choice2 = "Continue towards the faint light";
 
-String page4 = "The rover is covered in dust and most of the solar panels are broken. But you are quite surprised to see the on-board system booted up and running. In fact, there is a message on the screen: \"%1$s, come to 28.543436, -81.369031.\" Those coordinates aren\'t far, but you don\'t know if your oxygen will last for a trip there and back.";
+String page4(String name) => "The rover is covered in dust and most of the solar panels are broken. But you are quite surprised to see the on-board system booted up and running. In fact, there is a message on the screen: \"$name, come to 28.543436, -81.369031.\" Those coordinates aren\'t far, but you don\'t know if your oxygen will last for a trip there and back.";
 String page4_choice1="Explore the coordinates";
 String page4_choice2 = "Return to Earth";
 
